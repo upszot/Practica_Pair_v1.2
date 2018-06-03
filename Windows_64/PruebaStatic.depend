@@ -46,17 +46,34 @@
 	"ArrayList.h"
 	"Employee.h"
 
-1477571236 source:c:\test\pattie\practica_pair_v1.2\windows_64\employee.c
+1527893024 source:d:\descargas\practica_pair_v1.2\windows_64\employee.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"Employee.h"
+	<string.h>
 
-1463604778 c:\test\pattie\practica_pair_v1.2\windows_64\arraylist.h
+1527887774 d:\descargas\practica_pair_v1.2\windows_64\arraylist.h
 
-1477571236 c:\test\pattie\practica_pair_v1.2\windows_64\employee.h
+1527893013 d:\descargas\practica_pair_v1.2\windows_64\employee.h
 
-1464384470 source:c:\test\pattie\practica_pair_v1.2\windows_64\parser.c
+1527893222 source:d:\descargas\practica_pair_v1.2\windows_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+	"d:\github\TP3\TP3\General.h"
+	"d:\github\TP3\TP3\General.c"
+
+1527880657 d:\github\tp3\tp3\general.h
+
+1527886987 d:\github\tp3\tp3\general.c
+	"General.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1464384470 source:d:\descargas\practica_pair_v1.2\windows_64\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"

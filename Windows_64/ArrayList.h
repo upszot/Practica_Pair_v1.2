@@ -70,7 +70,7 @@ int al_add(ArrayList* pList,void* pElement);
 int al_deleteArrayList(ArrayList* pList);
 
 
-/** \brief  Delete arrayList
+/** \brief  Length of arrayList
  * \param pList ArrayList* Pointer to arrayList
  * \return int Return length of array or (-1) if Error [pList is NULL pointer]
  *
