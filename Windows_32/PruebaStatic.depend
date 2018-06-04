@@ -46,3 +46,33 @@
 	"ArrayList.h"
 	"Employee.h"
 
+1528070373 source:f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1527903413 f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\arraylist.h
+
+1528069793 f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\employee.h
+
+1528069067 source:f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1528067203 source:f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1528063583 f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\parser.h
+

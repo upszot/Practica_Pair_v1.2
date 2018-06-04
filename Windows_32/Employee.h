@@ -18,14 +18,18 @@
 
 #ifndef _EMPLOYEE_H
 #define _EMPLOYEE_H
-struct
+
+#define TAM_NOMBRE 51
+#define TAM_APELLIDO 51
+
+typedef struct
 {
     int id;
-    char name[51];
-    char lastName[51];
+    char name[TAM_NOMBRE];
+    char lastName[TAM_APELLIDO];
     int isEmpty;
 
-}typedef Employee;
+} Employee;
 
 
 int employee_compare(void* pEmployeeA,void* pEmployeeB);
@@ -34,6 +38,16 @@ Employee* employee_new(void);
 void employee_delete(Employee* this);
 int employee_setId(Employee* this, int id);
 int employee_getId(Employee* this);
+
+int employee_setName(Employee* this, const char* name);
+char* employee_getName(Employee* this);
+int employee_setLastName(Employee* this, const char* lastName);
+char* employee_getLastName(Employee* this);
+int employee_setIsEmpty(Employee* this, int isEmpty);
+int employee_getIsEmpty(Employee* this);
+
+int employee_nuevoId(ArrayList*);
+
 #endif // _EMPLOYEE_H
 
 
