@@ -76,3 +76,41 @@
 
 1528063583 f:\mis documentos\escritorio\programacion\utn\programacion 1\practica_pair_v1.2\windows_32\parser.h
 
+1528234918 source:c:\test\gferrer\practica_pair_v1.2\windows_32\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1528228179 c:\test\gferrer\practica_pair_v1.2\windows_32\arraylist.h
+
+1528233784 c:\test\gferrer\practica_pair_v1.2\windows_32\employee.h
+
+1528228179 c:\test\gferrer\practica_pair_v1.2\windows_32\parser.h
+
+1528231385 source:c:\test\gferrer\practica_pair_v1.2\windows_32\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1528234059 source:c:\test\gferrer\practica_pair_v1.2\windows_32\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1528232116 source:c:\test\gferrer\practica_pair_v1.2\windows_32\funciones.c
+
+1528229510 c:\test\gferrer\practica_pair_v1.2\windows_32\funciones.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

@@ -5,11 +5,66 @@
 #include "Employee.h"
 #include "parser.h"
 
-int employee_compare(void* pEmployeeA,void* pEmployeeB)
+
+int cargarDesdeArchivo(const char* nombreArchivo, ArrayList* arrayEmpleados)
 {
-    return 0;
+    FILE* archivoEmpleados;
+    int retorno = -1;
+    int parseoArchivo;
+    int cerroArchivo;
+
+    archivoEmpleados = fopen(nombreArchivo, "r");
+    if(archivoEmpleados != NULL)
+    {
+        parseoArchivo = parserEmployee(archivoEmpleados, arrayEmpleados);
+        cerroArchivo = fclose(archivoEmpleados);
+
+        if(parseoArchivo == 0 && cerroArchivo == 0)
+        {
+            retorno = 0;
+        }
+    }
+
+    return retorno;
 }
 
+int listarEmpleados(ArrayList* arrayEmpleados,int paginado)
+{
+    int i;
+    int cont=0;
+    int retorno = -1;
+    Employee* unEmpleado = NULL;
+
+    for(i = 0; i < al_len(arrayEmpleados); i++)
+    {
+        unEmpleado = (Employee*)al_get(arrayEmpleados, i);
+        if(unEmpleado != NULL)
+        {
+            employee_print(unEmpleado);
+            retorno = 0;
+        }
+        if(cont!=0 && cont %paginado==0)
+        {
+            system("pause");
+            system("cls");
+        }
+        cont++;
+    }
+    if(cont!=0)
+    {
+        system("pause");
+    }
+    return retorno;
+}
+
+int employee_compare(void* pEmployeeA,void* pEmployeeB)
+{
+    Employee *tmp_emp1;
+    Employee *tmp_emp2;
+    tmp_emp1=(Employee * ) pEmployeeA;
+    tmp_emp2=(Employee * ) pEmployeeB;
+    return strcmp(tmp_emp1->name,tmp_emp2->name);
+}
 
 void employee_print(Employee* this)
 {

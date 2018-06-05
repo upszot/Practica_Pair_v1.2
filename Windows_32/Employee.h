@@ -31,6 +31,9 @@ typedef struct
 
 } Employee;
 
+int cargarDesdeArchivo(const char* nombreArchivo, ArrayList* arrayEmpleados);
+int listarEmpleados(ArrayList* arrayEmpleados,int paginado);
+
 
 int employee_compare(void* pEmployeeA,void* pEmployeeB);
 void employee_print(Employee* this);

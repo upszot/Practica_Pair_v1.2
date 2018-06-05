@@ -7,12 +7,11 @@
 
 #define MASACARA_ARCHIVO_EMPLEADOS "%[^,],%[^,],%[^,],%[^\n]\n"
 #define CANTIDAD_CAMPOS_ARCHIVO_EMPLEADOS 4
-#define CANTIDAD_FILAS_ARCHIVO_EMPLEADOS 1000
 #define TIENE_ENCABEZADO_ARCHIVO_EMPLEADOS 1
 
 int parserEmployee(FILE* pFile, ArrayList* pArrayListEmployee)
 {
-    int retorno = 0;
+    int retorno = -1;
     int cantidadFilasLeidas = 0;
     int cantidadDatosLeidos;
     Employee* unEmpleado;
@@ -26,6 +25,7 @@ int parserEmployee(FILE* pFile, ArrayList* pArrayListEmployee)
 
     if(pFile != NULL)
     {
+        retorno = -2;
         if(TIENE_ENCABEZADO_ARCHIVO_EMPLEADOS == 1)
         {
             //descarto la lectura del encabezado
@@ -34,6 +34,7 @@ int parserEmployee(FILE* pFile, ArrayList* pArrayListEmployee)
 
         while(!feof(pFile))
         {
+            retorno = 0;
             unEmpleado = employee_new();
             if(unEmpleado != NULL)
             {
@@ -81,12 +82,6 @@ int parserEmployee(FILE* pFile, ArrayList* pArrayListEmployee)
             {
                 break;
             }
-        }
-
-
-        if(cantidadFilasLeidas == CANTIDAD_FILAS_ARCHIVO_EMPLEADOS)
-        {
-            retorno = 1;
         }
     }
 
