@@ -14,7 +14,7 @@ void sms_error(int mensaje,int Error)
     switch(mensaje)
     {
         case -1:
-            printf("ERROR-COD: %d -- Inicializar listado",Error);
+            printf("ERROR-COD: %d -- No se puede crear la lista de Empleados en memoria",Error);
             break;
         case 1:
             printf("ERROR-COD: %d -- Parse del archivo data.csv",Error);
@@ -43,4 +43,17 @@ void sms_error(int mensaje,int Error)
     }
     printf("\n\n");
     system("pause");
+}
+
+int get_int(char *sms)
+{
+    int Numero;
+    do
+    {
+        fflush(stdin);
+        printf("%s ",sms);
+        scanf("%d",&Numero);
+        fflush(stdin);
+    }while(Numero <= 0);
+    return Numero;
 }

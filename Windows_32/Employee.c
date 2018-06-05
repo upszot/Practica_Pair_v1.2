@@ -16,26 +16,27 @@ int cargarDesdeArchivo(const char* nombreArchivo, ArrayList* arrayEmpleados)
     archivoEmpleados = fopen(nombreArchivo, "r");
     if(archivoEmpleados != NULL)
     {
-        parseoArchivo = parserEmployee(archivoEmpleados, arrayEmpleados);
-        cerroArchivo = fclose(archivoEmpleados);
-
-        if(parseoArchivo == 0 && cerroArchivo == 0)
+        retorno = -2;
+        if(parserEmployee(archivoEmpleados, arrayEmpleados)==0)
         {
-            retorno = 0;
+            retorno = -3;
+            if(fclose(archivoEmpleados)==0)
+            {
+                retorno = 0;
+            }
         }
-    }
+    }//FIN if(archivoEmpleados != NULL)
 
     return retorno;
 }
 
 int listarEmpleados(ArrayList* arrayEmpleados,int paginado)
 {
-    int i;
     int cont=0;
     int retorno = -1;
     Employee* unEmpleado = NULL;
 
-    for(i = 0; i < al_len(arrayEmpleados); i++)
+    for(int i = 0; i < al_len(arrayEmpleados); i++)
     {
         unEmpleado = (Employee*)al_get(arrayEmpleados, i);
         if(unEmpleado != NULL)
@@ -156,12 +157,11 @@ int employee_getIsEmpty(Employee* this)
 
 int employee_nuevoId(ArrayList* arrayEmpleados)
 {
-    int i;
     int nuevoId = 0;
     Employee* unEmpleado = NULL;
     int primerElemento = 0;
 
-    for(i = 0; i < al_len(arrayEmpleados); i++)
+    for(int i = 0; i < al_len(arrayEmpleados); i++)
     {
         unEmpleado = (Employee*)al_get(arrayEmpleados, i);
         if(unEmpleado != NULL)
