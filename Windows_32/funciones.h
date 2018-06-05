@@ -1,8 +1,8 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 #endif // FUNCIONES_H_INCLUDED
 
@@ -22,3 +22,4 @@ void menu(char *opciones);
  *
  */
 void sms_error(int mensaje,int Error);
+int get_int(char *sms);

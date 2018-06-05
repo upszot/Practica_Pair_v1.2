@@ -5,6 +5,28 @@
 #include "Employee.h"
 #include "parser.h"
 
+int get_index( ArrayList* arrayEmpleados, int ID)
+{
+    int retorno=-1;
+    Employee* unEmpleado = NULL;
+    if(arrayEmpleados != NULL)
+    {
+        retorno=-2;
+        for(int i = 0; i < al_len(arrayEmpleados); i++)
+        {
+            unEmpleado = (Employee*)al_get(arrayEmpleados, i);
+            if(unEmpleado != NULL)
+            {
+                if(unEmpleado.id == ID)
+                {
+                    retorno=i;
+                    break;
+                }
+            }
+        }
+    }
+    return retorno;
+}
 
 int cargarDesdeArchivo(const char* nombreArchivo, ArrayList* arrayEmpleados)
 {
@@ -104,6 +126,8 @@ int employee_getId(Employee* this)
 
     return id;
 }
+
+
 
 int employee_setName(Employee* this, const char* name)
 {

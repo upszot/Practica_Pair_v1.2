@@ -53,9 +53,9 @@ int main()
                     break;
                 case 5:
                     Error=listarEmpleados(arrayEmpleados,PAGINADO);
-                    //ingrese Nro ID a borrar
-                    //get_index(arrayEmpleados,ID);
-                    //Error=al_remove(arrayEmpleados, index);
+                    int ID=get_int("\n Ingrese ID a borrar: ");
+                    int index= get_index( arrayEmpleados,  ID);
+                    Error=al_remove(arrayEmpleados, index);
 
                     break;
                 case 6:

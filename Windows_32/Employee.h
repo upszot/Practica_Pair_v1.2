@@ -34,6 +34,7 @@ typedef struct
 int cargarDesdeArchivo(const char* nombreArchivo, ArrayList* arrayEmpleados);
 int listarEmpleados(ArrayList* arrayEmpleados,int paginado);
 
+int get_index( ArrayList* arrayEmpleados, int ID);
 
 int employee_compare(void* pEmployeeA,void* pEmployeeB);
 void employee_print(Employee* this);
