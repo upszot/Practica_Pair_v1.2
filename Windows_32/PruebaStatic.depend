@@ -114,3 +114,41 @@
 	<stdlib.h>
 	<string.h>
 
+1529766589 source:e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1529766589 e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\arraylist.h
+
+1529766589 e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\employee.h
+
+1529766589 e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\parser.h
+
+1529766589 source:e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\funciones.c
+
+1529766589 source:e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
+1529766589 e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1529766589 source:e:\documentos\tecnicatura\programacion\practica_pair_v1.2\windows_32\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+	"parser.h"
+
